@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@pages/*": ["./src/Pages/*"],
+      "@app/*": ["./src/App/*"],
+      "@shared": ["src/Shared"],
+      "@ui": ["src/Shared/Ui"],
+      "@utils": ["src/Shared/Utils"],
+      "@types": ["src/Shared/Types"],
+      "@libs": ["src/Shared/Libs"],
+      "@api": ["src/Shared/Api"],
+      "@providers": ["src/Shared/Providers"],
+      "@hooks": ["src/Shared/Hooks"],
+      "@constants": ["src/Shared/Constants"],
+      "@icons": ["src/Shared/Assets/Icons"],
+      "@img": ["src/Shared/Assets/Img"],
+      "@widgets": ["./src/Widgets"],
+      "@features": ["./src/Features"],
+      "@entities": ["./src/Entities"]
+    },
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
